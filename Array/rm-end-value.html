@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="value1"></p>
+    <p id="value2">I am a paragraph.</p>
+    <p id="value3"></p>
+
+    <!-- <button class="findValue" onclick="findaval()">
+        find Value
+    </button>
+     -->
+    <script>
+    // 2. Remove an element from the end of an array.
+    const arr = [44, 6, 7, 8, 9, 3];
+    let rmval ;
+        const rmLast = (arr)=>{
+            rmval  = arr.pop();
+            return rmval;
+        }
+    document.getElementById("value1").innerHTML =" Array "+  arr;
+    document.getElementById("value2").innerHTML =   rmLast(arr);
+    document.getElementById("value3").innerHTML = "Current Array " +  arr;
+   
+     
+    </script>
+  </body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="value1"></p>
+    <p id="value">I am a paragraph.</p>
+
+    <!-- <button class="findValue" onclick="findaval()">
+        find Value
+    </button>
+     -->
+    <script>
+      // 1. Create an array with five elements and access the third element.
+      const arr = [44, 6, 7, 8, 9, 3];
+      let input;
+
+      const findaval = () => {
+        let output;
+        document.getElementById("value1").innerHTML = arr;
+        input = parseInt(prompt("Enter Number"));
+        console.log(typeof input);
+        if(input < arr.length){
+        return  output=   arr[input]
+        }
+        else{
+            output = `Please enter below${arr.length}` 
+        }
+        return output;
+      };
+      document.getElementById("value").innerHTML = findaval();
+    </script>
+  </body>
+</html>
