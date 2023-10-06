@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const array = [3, 4, 5, 6, 100, 7, 8, 9, 66, 44, 3, 4, 5, 6, 88];
+
+      //   const dup = (arr) => {
+      //     return  arr.filter((val, index) => {
+      //       return arr.indexOf(val) == index;
+      //     });
+
+      //   };
+
+      //   console.log(dup(array));
+
+      //****************************** Largest Number *****************************************
+
+      // let max =array[0];
+      // let min = array[0];
+
+      // for(i=0;i<array.length;i++){
+      //    if(max < array[i])
+      //    {
+      //     max = array[i];
+      //    }
+      //    if(min > array[i] ){
+      //     min = array[i]
+      //    }
+
+      // }
+      // console.log("max", max)
+      // console.log("MINIMUM value", min)
+
+      //****************************** Duplicate number Remove *****************************************
+
+     
+      const dup = (array) =>{
+        return array.filter((val, index)=>{
+          return array.indexOf(val) == index;
+        })
+      }
+      console.log(dup(array));
+    </script>
+  </body>
+</html>
