@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="value1"></p>
+    <!-- <p id="value2">I am a paragraph.</p> -->
+    <p id="value3"></p>
+
+    <!-- <button class="findValue" onclick="findaval()">
+        find Value
+    </button>
+     -->
+    <script>
+      //    3. Add an element to the end of an array.
+
+      const arrLength = (arr) => {
+        let count = 0;
+        count = arr.length;
+        return count;
+      };
+    //   document.getElementById("value1").innerHTML = " Array " + arr;
+      document.getElementById("value3").innerHTML = arrLength([
+        55, 44, 66, 99, 8,
+      ]);
+    </script>
+  </body>
+</html>
