@@ -6,22 +6,21 @@
     <title>Document</title>
   </head>
   <body>
-    <p id="value1"></p>
-    <p id="value">I am a paragraph.</p>
+    <!-- <p id="value1"></p>
+    <p id="value">I am a paragraph.</p> -->
 
     <!-- <button class="findValue" onclick="findaval()">
         find Value
     </button>
      -->
     <script>
-    // 6. Iterate over an array using a `for` loop.
-      const arr = [44, 6, 7, 8, 9, 3];
-   
-      for(i=0;i<arr.length;i++){
-        console.log(arr[i]);
-      }
-      
-    //   document.getElementById("value").innerHTML = iterateArray(arr);
+      // 1. Create an array with five elements and access the third element.
+      const arr2 = [44, 6, 7, 8, 9, 3];
+      const arr1 = [44, 6, 7, 8, 9, 3];
+
+      const newarr = [...arr1, ...arr2]
+
+        console.log(newarr);
     </script>
   </body>
 </html>
