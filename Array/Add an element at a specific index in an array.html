@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="value1"></p>
+    <p id="value">I am a paragraph.</p>
+    <button onclick="addval()">Get Out</button>
+
+    <!-- <button class="findValue" onclick="findaval()">
+        find Value
+    </button>
+     -->
+    <script>
+      //  11. Remove an element at a specific index from an array.
+
+      const arr = [44, 6, 7, 8, 9, 3];
+
+      function  addval() {
+        const index = parseInt(prompt("Enter Index"))
+        const value = parseInt(prompt("Enter value"))
+        arr[index] = value;
+        console.log(arr);
+      }
+    </script>
+  </body>
+</html>
