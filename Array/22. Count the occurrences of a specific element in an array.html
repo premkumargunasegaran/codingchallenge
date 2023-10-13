@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>prem</p>
+
+    <script>
+      //  22. Count the occurrences of a specific element in an array.
+
+      const arr = [
+        2, 2, 2, 2, 3, 3, 3, 1, 1, 1, 4, 4, 5, 5, 5, 8, 8, 8, 8, 8, 8, 8, 8,
+      ];
+      let count = 0;
+      // console.log(count);
+
+      function CountTheOccurrences(arr) {
+        let input = parseInt(prompt("Enter Input Value"));
+
+        for (i = 0; i < arr.length; i++) {
+          if (input == arr[i]) {
+            count++;
+          }
+        }
+        return `${input} occurs ${count} Times`;
+      }
+      console.log(CountTheOccurrences(arr));
+    </script>
+  </body>
+</html>

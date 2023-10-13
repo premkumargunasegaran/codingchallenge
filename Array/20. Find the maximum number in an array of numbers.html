@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="value1"></p>
+    <p id="value">I am a paragraph.</p>
+    <!-- <button onclick="filterEven()">Get Out</button> -->
+
+    <!-- <button class="findValue" onclick="findaval()">
+        find Value
+    </button>
+     -->
+    <script>
+      //  20. Find the maximum number in an array of numbers.
+
+      const arr = [44, 6, 7, 8, 9, 3, 11, 12, 45, 55, 22];
+      let max = arr[0];
+       let min = arr[0];
+      function maxNumber(arr) {
+      
+        for(i=0; i<arr.length; i++){
+           if(max < arr[i]) {
+             max = arr[i]
+           }
+           if(min > arr[i]){
+            min = arr[i]
+           }
+        }
+        return 0
+      }
+      maxNumber(arr);
+      console.log("max" + max);
+      console.log("min" + min);
+    </script>
+  </body>
+</html>
