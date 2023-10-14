@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>prem</p>
+
+    <script>
+      //  27. Find the union of two arrays (combine without duplicates).
+
+      function union(arr1, arr2) {
+        // Combine the two arrays and use a Set to automatically remove duplicates
+        const combinedArray = [...arr1, ...arr2];
+        return combinedArray.filter((value, index)=>{
+            return combinedArray.indexOf(value) == index
+        })
+      }
+
+      const array1 = [2,1, 3, 4, 5];
+      const array2 = [3, 4, 5, 6, 7];
+
+      const result = union(array1, array2);
+      console.log(result.sort()); // Output: [1, 2, 3, 4, 5, 6, 7]
+      console.log(Set(combinedArray));
+      // Method 2
+    </script>
+  </body>
+</html>
